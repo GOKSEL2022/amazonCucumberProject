@@ -1,6 +1,10 @@
 Feature: sayfaya_ulasma_testi
   @US01_TC01
-  Scenario: kullanici_amazon_urlye_gider
+  Background: kullanici_amazon_urlye_gider
     Given kullanici amazon url ye gider
     When  kullanici anasayfada oldugunu dogrular
-    Then  kullanici sayfayi kapatir
+
+    Scenario: kullanici_amazon_sayfasina_kayitli_kullanici_olarak_giris_yapar
+      Given kullanici hesaba giris yapin alanina gelir
+      When kullanici giris yap linke tiklar
+      Then  kullanici sayfayi kapatir
