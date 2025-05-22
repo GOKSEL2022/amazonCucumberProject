@@ -14,4 +14,12 @@ public class US01_TC01_StepDefs {
     public void kullaniciSayfayiKapatir() {
         Driver.closeDriver();
     }
+
+    @Given("kullanici hesaba giris yapin alanina gelir")
+    public void kullaniciHesabaGirisYapinAlaninaGelir() {
+    }
+
+    @When("kullanici giris yap linke tiklar")
+    public void kullaniciGirisYapLinkeTiklar() {
+    }
 }
