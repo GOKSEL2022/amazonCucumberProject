@@ -1,7 +1,11 @@
 package stepdefinitions;
 import io.cucumber.java.en.*;
+import org.openqa.selenium.interactions.Actions;
+import pages.HomePage;
 import utilities.Driver;
 public class US01_TC01_StepDefs {
+    HomePage homePage=new HomePage();
+    Actions actions=new Actions(Driver.getDriver());
     @Given("kullanici amazon url ye gider")
     public void kullaniciAmazonUrlYeGider() {
         Driver.getDriver().get("amazon_url");
@@ -17,6 +21,7 @@ public class US01_TC01_StepDefs {
 
     @Given("kullanici hesaba giris yapin alanina gelir")
     public void kullaniciHesabaGirisYapinAlaninaGelir() {
+        actions.moveToElement(homePage.merhabaGirisYapinHesapVeListelerTextTitleHome).perform();
     }
 
     @When("kullanici giris yap linke tiklar")
