@@ -1,10 +1,10 @@
 package stepdefinitions;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.interactions.Actions;
-import pages.HomePage;
+import pages.AllPages;
 import utilities.Driver;
 public class US01_TC01_StepDefs {
-    HomePage homePage=new HomePage();
+    AllPages allPages=new AllPages();
     Actions actions=new Actions(Driver.getDriver());
     @Given("kullanici amazon url ye gider")
     public void kullaniciAmazonUrlYeGider() {
@@ -18,12 +18,10 @@ public class US01_TC01_StepDefs {
     public void kullaniciSayfayiKapatir() {
         Driver.closeDriver();
     }
-
     @Given("kullanici hesaba giris yapin alanina gelir")
     public void kullaniciHesabaGirisYapinAlaninaGelir() {
-        actions.moveToElement(homePage.merhabaGirisYapinHesapVeListelerTextTitleHome).perform();
+        actions.moveToElement(allPages.homePage().merhabaGirisYapinHesapVeListelerTextTitleHome).perform();
     }
-
     @When("kullanici giris yap linke tiklar")
     public void kullaniciGirisYapLinkeTiklar() {
     }
