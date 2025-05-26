@@ -3,6 +3,7 @@ import io.cucumber.java.en.*;
 import org.openqa.selenium.interactions.Actions;
 import pages.AllPages;
 import utilities.Driver;
+import static utilities.ReusableMethods.clickByJS;
 public class US01_TC01_StepDefs {
     AllPages allPages=new AllPages();
     Actions actions=new Actions(Driver.getDriver());
@@ -24,5 +25,6 @@ public class US01_TC01_StepDefs {
     }
     @When("kullanici giris yap linke tiklar")
     public void kullaniciGirisYapLinkeTiklar() {
+        clickByJS(allPages.homePage().girisYapButonHome);
     }
 }
