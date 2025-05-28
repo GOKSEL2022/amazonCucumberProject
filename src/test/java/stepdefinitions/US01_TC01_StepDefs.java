@@ -27,4 +27,9 @@ public class US01_TC01_StepDefs {
     public void kullaniciGirisYapLinkeTiklar() {
         clickByJS(allPages.homePage().girisYapButonHome);
     }
+
+    @And("kullanici Giris yapin veya hesap olusturun sayfasina gelir")
+    public void kullaniciGirisYapinVeyaHesapOlusturunSayfasinaGelir() {
+        actions.moveToElement(allPages.homePage().merhabaGirisYapinHesapVeListelerTextTitleHome).perform();
+    }
 }
