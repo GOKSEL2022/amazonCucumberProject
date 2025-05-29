@@ -32,4 +32,8 @@ public class US01_TC01_StepDefs {
     public void kullaniciGirisYapinVeyaHesapOlusturunSayfasinaGelir() {
         actions.moveToElement(allPages.homePage().merhabaGirisYapinHesapVeListelerTextTitleHome).perform();
     }
+
+    @And("kullanici kayitli telefon veya epostasini girer")
+    public void kullaniciKayitliTelefonVeyaEpostasiniGirer() {
+    }
 }
