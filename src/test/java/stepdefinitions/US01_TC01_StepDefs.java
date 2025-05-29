@@ -27,13 +27,14 @@ public class US01_TC01_StepDefs {
     public void kullaniciGirisYapLinkeTiklar() {
         clickByJS(allPages.homePage().girisYapButonHome);
     }
-
     @And("kullanici Giris yapin veya hesap olusturun sayfasina gelir")
     public void kullaniciGirisYapinVeyaHesapOlusturunSayfasinaGelir() {
         actions.moveToElement(allPages.homePage().merhabaGirisYapinHesapVeListelerTextTitleHome).perform();
     }
-
     @And("kullanici kayitli telefon veya epostasini girer")
     public void kullaniciKayitliTelefonVeyaEpostasiniGirer() {
+    }
+    @And("kullanici devam et butona tiklar")
+    public void kullaniciDevamEtButonaTiklar() {
     }
 }
