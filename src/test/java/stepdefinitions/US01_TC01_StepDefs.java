@@ -3,6 +3,8 @@ import io.cucumber.java.en.*;
 import org.openqa.selenium.interactions.Actions;
 import pages.AllPages;
 import utilities.Driver;
+import utilities.ReusableMethods;
+
 import static utilities.ReusableMethods.clickByJS;
 public class US01_TC01_StepDefs {
     AllPages allPages=new AllPages();
@@ -36,5 +38,6 @@ public class US01_TC01_StepDefs {
     }
     @And("kullanici devam et butona tiklar")
     public void kullaniciDevamEtButonaTiklar() {
+        ReusableMethods.clickByJS(allPages.signinPage().devamEtButonSignin);
     }
 }
