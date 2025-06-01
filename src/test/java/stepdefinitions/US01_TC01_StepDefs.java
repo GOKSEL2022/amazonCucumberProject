@@ -2,6 +2,7 @@ package stepdefinitions;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.interactions.Actions;
 import pages.AllPages;
+import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
@@ -35,9 +36,10 @@ public class US01_TC01_StepDefs {
     }
     @And("kullanici kayitli telefon veya epostasini girer")
     public void kullaniciKayitliTelefonVeyaEpostasiniGirer() {
+        allPages.signinPage().cepTelefonuNumarasiVeyaEpostaGirinTextboxSignin.sendKeys(ConfigReader.getProperty("KayitliEmail"));
     }
     @And("kullanici devam et butona tiklar")
     public void kullaniciDevamEtButonaTiklar() {
-        ReusableMethods.clickByJS(allPages.signinPage().devamEtButonSignin);
+        clickByJS(allPages.signinPage().devamEtButonSignin);
     }
 }
