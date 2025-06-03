@@ -36,10 +36,15 @@ public class US01_TC01_StepDefs {
     }
     @And("kullanici kayitli telefon veya epostasini girer")
     public void kullaniciKayitliTelefonVeyaEpostasiniGirer() {
-        allPages.signinPage().cepTelefonuNumarasiVeyaEpostaGirinTextboxSignin.sendKeys(ConfigReader.getProperty("KayitliEmail"));
+        allPages.signinPage().cepTelefonuNumarasiVeyaEpostaGirinTextboxSignin.sendKeys(ConfigReader.getProperty("KayitliTelefon"));
     }
     @And("kullanici devam et butona tiklar")
     public void kullaniciDevamEtButonaTiklar() {
         clickByJS(allPages.signinPage().devamEtButonSignin);
+    }
+
+    @And("kullanici kayitli sifresini girer")
+    public void kullaniciKayitliSifresiniGirer() {
+        allPages.signinPage().cepTelefonuNumarasiVeyaEpostaGirinTextboxSignin.sendKeys(ConfigReader.getProperty("KayitliSifre"));
     }
 }
