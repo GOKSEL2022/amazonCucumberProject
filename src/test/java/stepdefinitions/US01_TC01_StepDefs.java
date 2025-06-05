@@ -47,4 +47,12 @@ public class US01_TC01_StepDefs {
     public void kullaniciKayitliSifresiniGirer() {
         allPages.signinPage().cepTelefonuNumarasiVeyaEpostaGirinTextboxSignin.sendKeys(ConfigReader.getProperty("KayitliSifre"));
     }
+
+    @And("kullanici giris yap butona tiklar")
+    public void kullaniciGirisYapButonaTiklar() {
+    }
+
+    @And("kullanici uye olarak sayfaya giris yapildigini dogrular")
+    public void kullaniciUyeOlarakSayfayaGirisYapildiginiDogrular() {
+    }
 }
