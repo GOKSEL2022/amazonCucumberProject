@@ -15,5 +15,9 @@ public class SigninPage {
     @FindBy(xpath = "//input[@type='submit']")
     public WebElement devamEtButonSignin;
 
+    @FindBy(id = "signInSubmit")
+    public WebElement girisYapButonSignin;
+
+
 
 }
