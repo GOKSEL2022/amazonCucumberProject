@@ -9,8 +9,8 @@ Feature: sayfaya_ulasma_testi
       When kullanici giris yap linke tiklar
       And  kullanici Giris yapin veya hesap olusturun sayfasina gelir
       And  kullanici kayitli telefon veya epostasini girer
-      #And  kullanici devam et butona tiklar
-      #And  kullanici kayitli sifresini girer
-      #And  kullanici giris yap butona tiklar
-      #And kullanici uye olarak sayfaya giris yapildigini dogrular
-      #Then  kullanici sayfayi kapatir
+      And  kullanici devam et butona tiklar
+      And  kullanici kayitli sifresini girer
+      And  kullanici giris yap butona tiklar
+      And kullanici uye olarak sayfaya giris yapildigini dogrular
+      Then  kullanici sayfayi kapatir
