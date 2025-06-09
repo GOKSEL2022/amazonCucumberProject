@@ -50,6 +50,7 @@ public class US01_TC01_StepDefs {
 
     @And("kullanici giris yap butona tiklar")
     public void kullaniciGirisYapButonaTiklar() {
+        clickByJS(allPages.signinPage().girisYapButonSignin);
     }
 
     @And("kullanici uye olarak sayfaya giris yapildigini dogrular")
