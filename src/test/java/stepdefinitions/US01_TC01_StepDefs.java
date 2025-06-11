@@ -4,8 +4,6 @@ import org.openqa.selenium.interactions.Actions;
 import pages.AllPages;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReusableMethods;
-
 import static utilities.ReusableMethods.clickByJS;
 public class US01_TC01_StepDefs {
     AllPages allPages=new AllPages();
@@ -47,11 +45,10 @@ public class US01_TC01_StepDefs {
     public void kullaniciKayitliSifresiniGirer() {
         allPages.signinPage().cepTelefonuNumarasiVeyaEpostaGirinTextboxSignin.sendKeys(ConfigReader.getProperty("KayitliSifre"));
     }
-
     @And("kullanici giris yap butona tiklar")
     public void kullaniciGirisYapButonaTiklar() {
+        clickByJS(allPages.signinPage().girisYapButonSignin);
     }
-
     @And("kullanici uye olarak sayfaya giris yapildigini dogrular")
     public void kullaniciUyeOlarakSayfayaGirisYapildiginiDogrular() {
     }
