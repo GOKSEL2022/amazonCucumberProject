@@ -17,8 +17,8 @@ Feature: sayfaya_ulasma_testi
 
   Scenario: TC01_Amazon_Urun_Arama_Sepete_Ekleme
 
-    Given Kullanici Amazon anasayfasina gider
-    When Giris yap sekmesine tiklar
+    Given kullanici amazon url ye gider
+    When kullanici giris yap linke tiklar
     Then Gecerli kullanici adini girer
     Then Devam et butonuna tiklar
     Then Gecerli password bilgisini girer
