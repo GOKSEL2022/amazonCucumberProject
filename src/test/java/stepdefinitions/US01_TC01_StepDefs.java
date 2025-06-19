@@ -10,7 +10,7 @@ public class US01_TC01_StepDefs {
     Actions actions=new Actions(Driver.getDriver());
     @Given("kullanici amazon url ye gider")
     public void kullaniciAmazonUrlYeGider() {
-        Driver.getDriver().get("amazon_url");
+        Driver.getDriver().get(ConfigReader.getProperty("amazon_url"));
     }
     @When("kullanici anasayfada oldugunu dogrular")
     public void kullaniciAnasayfadaOldugunuDogrular() {

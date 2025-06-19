@@ -1,19 +1,13 @@
 package utilities;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
-import java.util.concurrent.TimeUnit;
-
+import java.time.Duration;
 public class Driver {
-
     private Driver(){
-
     }
-
    private static WebDriver driver;
     // driver'i baska class'lardan sadece Driver class ismi ile cagirabilmek icin STATIC yaptik
     // henuz bu driver ile ilgili ayarlar yapmadigim icin baska class'lar bunu yanlislikla kullanmasin diye
@@ -47,7 +41,7 @@ public class Driver {
             }
 
             driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         }
         return driver;
     }
