@@ -51,5 +51,6 @@ public class US01_TC01_StepDefs {
     }
     @And("kullanici uye olarak sayfaya giris yapildigini dogrular")
     public void kullaniciUyeOlarakSayfayaGirisYapildiginiDogrular() {
+        assert allPages.homePage().gokselKayitliKullaniciAdiHome.getText().contains("GÖKSEL");
     }
 }
