@@ -12,4 +12,7 @@ public class HomePage {
 
     @FindBy(xpath = "//*[text()='Giriş yap']")
     public WebElement girisYapButonHome;
+
+    @FindBy(xpath = "//*[@id='nav-link-accountList']")
+    public WebElement gokselKayitliKullaniciAdiHome;
 }
