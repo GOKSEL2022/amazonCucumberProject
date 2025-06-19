@@ -13,7 +13,7 @@ Feature: sayfaya_ulasma_testi
       And kullanici uye olarak sayfaya giris yapildigini dogrular
       Then  kullanici sayfayi kapatir
 
-  Scenario: TC01_Amazon_Urun_Arama_Sepete_Ekleme
+  #Scenario: TC01_Amazon_Urun_Arama_Sepete_Ekleme
    # Given kullanici amazon url ye gider
    # When kullanici giris yap linke tiklar
    # Then Gecerli kullanici adini girer
