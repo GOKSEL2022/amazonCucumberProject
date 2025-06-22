@@ -53,4 +53,8 @@ public class US01_TC01_StepDefs {
     public void kullaniciUyeOlarakSayfayaGirisYapildiginiDogrular() {
         assert allPages.homePage().gokselKayitliKullaniciAdiHome.getText().contains("GÖKSEL");
     }
+
+    @Then("Gecerli kullanici adini girer")
+    public void gecerliKullaniciAdiniGirer() {
+    }
 }
