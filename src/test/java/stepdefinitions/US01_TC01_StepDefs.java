@@ -56,5 +56,10 @@ public class US01_TC01_StepDefs {
 
     @Then("Gecerli kullanici adini girer")
     public void gecerliKullaniciAdiniGirer() {
+        
+    }
+
+    @Then("Devam et butonuna tiklar")
+    public void devamEtButonunaTiklar() {
     }
 }
